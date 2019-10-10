@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="utf-8">
+        <title>Executing a Function on keypress Event in jQuery</title>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script type="text/javascript">
+              $(document).ready(function(){
+        $("button").click(function(){  
+            $("#box").load("content.html" ,function(responseTxt,statusTxt,jqXHR) //load the image and content from content file//
+            
+            {
+                if(statusTxt=="success"){
+                    alert("New content loaded successfully");
+                
+                }
+                if(statusTxt=="error"){
+                    alert("Error:" +jqXHR.status+""+jqXHR.statusText);
+
+                }
+            });
+        });
+              });
+              </script>
+              </head>
+              <body>
+                  <div id="box">
+                      <h2>Click button to load new content inside DIV box</h2>
+                  </div>
+                  <button type="button">Load Content</button>
+                  
+
+                </body>
+                </html>

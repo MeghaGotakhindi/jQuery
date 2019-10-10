@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery Fade In demo</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          </head>
+     
+<body>
+    <h1>jQuery FadeIn Demo</h1>
+    
+<script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#one").fadeIn();
+                $("#two").fadeIn("slow");
+
+                $("#three").fadeIn(1000);
+                $("img").fadeIn(1000);
+            });
+        });
+</script>
+<button>Namaste</button><br><br>
+<div class="fade">
+     
+<div id="one" style="width:2200px;height:60px;display:none;background-color:orange;"></div>
+<img src="ashoka.jpg" style=" width:10px; padding-left:600px;position:absolute;"><br>
+<div id="two" style="width:2200px;height:60px;display:none;background-color:white;"></div><br><br>
+<div id="three" style="width:2200px;height:60px;display:none;background-color:green;"></div>
+
+
+</div>
+ 
+</body>
+</html>                                                                                
